@@ -71,11 +71,10 @@ For feature selection, we will select the following features: acousticness, danc
 
 ## Part 7. Different Results from Models
 
-- LogisticRegression
-![Screenshot 2021-03-16 at 11 16 59 PM](https://user-images.githubusercontent.com/70371572/111409643-b8a1ae80-86ad-11eb-89aa-c65fd775b050.png)
+- LogisticRegression has 
+   - Accuracy: 0.9214201310559673
+   - AUC: 0.8331614619226306
 - RandomForest
-![Screenshot 2021-03-16 at 11 17 59 PM](https://user-images.githubusercontent.com/70371572/111409707-dbcc5e00-86ad-11eb-8f46-39c181cca814.png)
-
 - KNeighborsClassifier
 - DecisionTreeClassifier
 
