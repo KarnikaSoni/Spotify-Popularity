@@ -100,7 +100,7 @@ Using a dataset of ultimate-spotify-tracks, we were able to predict popularity (
 
 Moving forward, I want to explore the affect of more dependencies using large hospital data to predict Medical diseases.
 
-# References
+## References
 - Cher Lau-Cher Lau - https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492
 - Are Hit Songs Becoming Less Musically Diverse? Andrew Thompson-Matt Daniels-Damián Gaume - https://pudding.cool/2018/05/similarity/
 - Song Popularity Predictor Mohamed Nasreldin-Mohamed Nasreldin - https://towardsdatascience.com/song-popularity-predictor-1ef69735e380
