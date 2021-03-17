@@ -8,6 +8,7 @@ In this section we essentially import essential packages for data visualisation,
 - KNeighborsClassifier
 - DecisionTreeClassifier
 - LogisticRegression
+- Linear Support Vector Classification
 
 are the models we will compare the popularity prediction on.
 
@@ -72,11 +73,29 @@ For feature selection, we will select the following features: acousticness, danc
 ## Part 7. Different Results from Models
 
 - LogisticRegression has 
+   - Accuracy: 0.7895316360511333
+   - AUC: 0.5
+- RandomForest
    - Accuracy: 0.9214201310559673
    - AUC: 0.8331614619226306
-- RandomForest
 - KNeighborsClassifier
+   - Accuracy: 0.7736330432914383
+   - AUC: 0.6156631913174396
 - DecisionTreeClassifier
-
+   - Accuracy: 0.8518637877323021
+   - AUC: 0.8112920096258869
+- Linear Support Vector Classification
+   - Accuracy: 0.7135
+   - AUC: 0.5824956293706294
+   
 ## Part 7. Conclusion
+Using a dataset of ultimate-spotify-tracks, we were able to predict popularity (greater than 57 popularity) with audio-based metrics such as acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence. The Random Forest Classifier was the best performing algorithm with **92.1% Accuracy** and **83.3% AUC**.
 
+## Model with best to worst Accuracy
+![Screenshot 2021-03-16 at 11 24 32 PM](https://user-images.githubusercontent.com/70371572/111410247-c60b6880-86ae-11eb-87b7-3e63d48a0256.png)
+
+## Model with best to worse AUC
+![Screenshot 2021-03-16 at 11 24 41 PM](https://user-images.githubusercontent.com/70371572/111410260-cad01c80-86ae-11eb-8d5e-db984d338b01.png)
+
+
+Moving forward, I want to explore the affect of more dependencies using large hospital data to predict Medical diseases.
