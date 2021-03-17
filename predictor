@@ -1,20 +1,26 @@
+# 1.Import
 import numpy as np 
 import pandas as pd # for working with dataframes
 import seaborn as sns # for data visualization 
-
 from matplotlib import pyplot as plt # for plotting
 %matplotlib inline
 sns.set_style("whitegrid")
-
 import warnings # http://blog.johnmuellerbooks.com/2015/11/30/warnings-in-python-and-anaconda/
 warnings.filterwarnings("ignore")
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC, LinearSVC
+from sklearn.metrics import make_scorer, accuracy_score, roc_auc_score 
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split
 
 dataframe = pd.read_csv('../input/ultimate-spotify-tracks-db/SpotifyFeatures.csv')
 dataframe.head()
 
 # 3.Viewing Dataset
 dataframe.describe()
-
 
 print(dataframe.keys())
 
@@ -91,17 +97,6 @@ dataframe.loc[dataframe['popularity'] == 1]
 # https://towardsdatascience.com/song-popularity-predictor-1ef69735e380.
 # For simplicity and using binary classification, we define as the top 25% popular songs as "popular", 
 # and the bottom 75% popular songs as "not popular".
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVC, LinearSVC
-from xgboost import XGBClassifier
-
-from sklearn.metrics import make_scorer, accuracy_score, roc_auc_score 
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import train_test_split
 
 features = ["acousticness", "danceability", "duration_ms", "energy", "instrumentalness", "key", "liveness", 
             "mode", "speechiness", "tempo", "time_signature", "valence"]
