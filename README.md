@@ -88,7 +88,7 @@ For feature selection, we will select the following features: acousticness, danc
    - Accuracy: 0.7135
    - AUC: 0.5824956293706294
    
-## Part 7. Conclusion
+## Part 8. Conclusion
 Using a dataset of ultimate-spotify-tracks, we were able to predict popularity (greater than 57 popularity) with audio-based metrics such as acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence. The Random Forest Classifier was the best performing algorithm with **92.1% Accuracy** and **83.3% AUC**.
 
 ### Model with best to worst Accuracy
