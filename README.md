@@ -58,3 +58,26 @@ If there were, there we could fill with mean or median depending on the data dis
 ### 11.Loudness for Songs with Less than 50 Popularity
 ![Screenshot 2021-03-16 at 11 05 52 PM](https://user-images.githubusercontent.com/70371572/111408784-29e06200-86ac-11eb-92ae-9344035ce6a7.png)
 
+## Part 5. Converting Variables from text to binary
+There are 3 variables: key, mode, and time signature that need to be converted from text to numbers using one-hot-encoding. We also define popularity as a binary variable. 
+- We will define above 57 as "popular" since that's the border of the top 25% of songs and encode that as 1, and below 75 as "not popular" and encode that as 0.
+- Key: Since there are 12 letter keys, we will convert A to 0, A to 1, and so on and so forth until B is 12.
+- Mode: We will assign major = 1 and minor = 0.
+
+## Part 6. Prediction using different Models
+For feature selection, we will select the following features: acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence.
+- We define 80% of the dataframe for training and 20% of the dataframe for testing.
+- Use train_test_split to make a testing dataset
+
+## Part 7. Different Results from Models
+
+- LogisticRegression
+![Screenshot 2021-03-16 at 11 16 59 PM](https://user-images.githubusercontent.com/70371572/111409643-b8a1ae80-86ad-11eb-89aa-c65fd775b050.png)
+- RandomForest
+![Screenshot 2021-03-16 at 11 17 59 PM](https://user-images.githubusercontent.com/70371572/111409707-dbcc5e00-86ad-11eb-8f46-39c181cca814.png)
+
+- KNeighborsClassifier
+- DecisionTreeClassifier
+
+## Part 7. Conclusion
+
