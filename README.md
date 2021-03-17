@@ -45,3 +45,16 @@ If there were, there we could fill with mean or median depending on the data dis
 
 ### 7.Dependency of Popularity on Loudness
 ![Screenshot 2021-03-16 at 11 01 52 PM](https://user-images.githubusercontent.com/70371572/111408383-9b6be080-86ab-11eb-82f7-79d4a073e024.png)
+
+### 8.Acoustiness for Songs with More than 50 Popularity
+![Screenshot 2021-03-16 at 11 05 04 PM](https://user-images.githubusercontent.com/70371572/111408710-0e755700-86ac-11eb-926c-9585ddce0a42.png)
+
+### 9.Acoustiness for Songs with Less than 50 Popularity
+![Screenshot 2021-03-16 at 11 05 22 PM](https://user-images.githubusercontent.com/70371572/111408733-18975580-86ac-11eb-9f2f-838d7fa72b07.png)
+
+### 10.Loudness for Songs with More than 50 Popularity
+![Screenshot 2021-03-16 at 11 05 38 PM](https://user-images.githubusercontent.com/70371572/111408755-2220bd80-86ac-11eb-87f9-4bc19de84707.png)
+
+### 11.Loudness for Songs with Less than 50 Popularity
+![Screenshot 2021-03-16 at 11 05 52 PM](https://user-images.githubusercontent.com/70371572/111408784-29e06200-86ac-11eb-92ae-9344035ce6a7.png)
+
