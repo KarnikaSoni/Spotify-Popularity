@@ -18,11 +18,12 @@ We load the dataset to look at the statistics like mean, count, and median using
 
 ## Descriptions of the 13 unique numerical attributes for each song:
 Attribute	| Mean	|Std Dev	|Description|
-1 - Acousticness (float)|	0.34	|0.34	|A confidence measure from 0.0 to 1.0 of whether the track is acoustic.|
-2 - Danceability (float)	0.58	0.18	Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.
-3 - duration_ms (int)	212546	124320	Duration of the track in ms
-4 - energy (float)	0.57	0.26	Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.
-5 - instrumentalness (float)	0.23	0.36	Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context.
+
+|1 - Acousticness (float)|	0.34	|0.34	|A confidence measure from 0.0 to 1.0 of whether the track is acoustic.|
+|2 - Danceability (float)|	0.58	|0.18	|Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.|
+|3 - duration_ms (int)|	212546|	124320	|Duration of the track in ms|
+|4 - energy (float)|	0.57	|0.26	|Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.
+|5 - instrumentalness (float)|	0.23|	0.36	Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context.
 6 - key (int)	5.24	3.60	The estimated overall key of the track.
 7 - liveness (float)	0.19	0.17	Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live.
 8 - loudness	-9.94	6.50	The overall loudness of a track in decibels (dB)
