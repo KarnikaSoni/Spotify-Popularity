@@ -88,8 +88,7 @@ If there were, there we could fill with mean or median depending on the data dis
 ### Heatmap for all features and Popularity
 ![Screenshot 2021-03-21 at 1 33 18 PM](https://user-images.githubusercontent.com/70371572/111914817-01f55380-8a4a-11eb-9683-f25e538feefa.png)
 
-To look at any potential multicolinearity issues within the independent variables, and using sns to make a heatmap. Overall, there aren't many independent variables with high correlation values, but energy/loudness have strong correlation which could potentially cause problems, which could have pretty big implications for fitting a linear model. Another thing we notice is there is not much correlation between independent variables and popularity.![Screenshot 2021-03-21 at 1 35 20 PM](https://user-images.githubusercontent.com/70371572/111914892-4b45a300-8a4a-11eb-91c2-5ff646bd5226.png)
-
+To look at any potential multicolinearity issues within the independent variables, and using sns to make a heatmap. Overall, there aren't many independent variables with high correlation values, but energy/loudness have strong correlation which could potentially cause problems, which could have pretty big implications for fitting a linear model. Another thing we notice is there is not much correlation between independent variables and popularity.
 
 ## Part 5. Converting Variables from text to binary
 There are 3 variables: key, mode, and time signature that need to be converted from text to numbers using one-hot-encoding. We also define popularity as a binary variable. 
@@ -103,23 +102,36 @@ For feature selection, we will select the following features: acousticness, danc
 - Use train_test_split to make a testing dataset
 
 ## Part 7. Different Results from Models
-
-- LogisticRegression has 
+Compairng Accuracy, AUC, and Actual vs Predicted values in Confusion Matrix
+### LogisticRegression has 
    - Accuracy: 0.7895316360511333
    - AUC: 0.5
-- RandomForest
+
+![Screenshot 2021-03-21 at 1 35 20 PM](https://user-images.githubusercontent.com/70371572/111914892-4b45a300-8a4a-11eb-91c2-5ff646bd5226.png)
+  - We see a weak correlation between the Actual Popular songs and Predicted Popular Songs, it indicated Logistic Regression may not be the best model for prediction in case for this data set.
+
+### RandomForest
    - Accuracy: 0.9214201310559673
    - AUC: 0.8331614619226306
-- KNeighborsClassifier
+![Screenshot 2021-03-21 at 1 39 12 PM](https://user-images.githubusercontent.com/70371572/111915045-d45cda00-8a4a-11eb-8865-a3d266ae7ed6.png)
+   - We see a strong correlation between the diagonals i.e. the Actual Popular songs and Predicted Popular Songs, and also with the Actual Not- Popular and Predicted Non-Popular songs, it indicates that Random Forest may be a candidate for best model for prediction in case for this data set.
+ 
+### KNeighborsClassifier
    - Accuracy: 0.7736330432914383
    - AUC: 0.6156631913174396
-- DecisionTreeClassifier
+ ![Screenshot 2021-03-21 at 1 44 47 PM](https://user-images.githubusercontent.com/70371572/111915250-9c09cb80-8a4b-11eb-9e88-b084af55d389.png)
+ - We see a weak correlation between the Actual Popular songs and Predicted Popular Songs, and but we see a strong correlation for the Actual Not- Popular and Predicted Non-Popular songs, it indicates that K Neighbors Classifier may be a realiable indicator for non Populrity as opposed to Popularity, but here we are looking for the best model for prediction of Popularity.
+ 
+### DecisionTreeClassifier
    - Accuracy: 0.8518637877323021
    - AUC: 0.8112920096258869
-- Linear Support Vector Classification
+ ![Screenshot 2021-03-21 at 1 45 51 PM](https://user-images.githubusercontent.com/70371572/111915285-c22f6b80-8a4b-11eb-94cf-e4cf9c83ca14.png)
+  - We see a strong correlation between the diagonals i.e. the Actual Popular songs and Predicted Popular Songs, and also with the Actual Not- Popular and Predicted Non-Popular songs, it indicates that Random Forest may be a candidate for best model for prediction in case for this data set.
+
+### Linear Support Vector Classification
    - Accuracy: 0.7135
    - AUC: 0.5824956293706294
-   
+  
 ## Part 8. Conclusion
 Using a dataset of ultimate-spotify-tracks, we were able to predict popularity (greater than 57 popularity) with audio-based metrics such as acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence. The Random Forest Classifier was the best performing algorithm with **92.1% Accuracy** and **83.3% AUC**.
 
