@@ -16,6 +16,22 @@ are the models we will compare the popularity prediction on.
 We load the dataset to look at the statistics like mean, count, and median using describe.
 ![Screenshot 2021-03-16 at 10 47 24 PM](https://user-images.githubusercontent.com/70371572/111407029-a3c31c00-86a9-11eb-8f67-ea28a951396e.png)
 
+## Descriptions of the 13 unique numerical attributes for each song:
+Attribute	| Mean	|Std Dev	|Description|
+1 - Acousticness (float)|	0.34	|0.34	|A confidence measure from 0.0 to 1.0 of whether the track is acoustic.|
+2 - Danceability (float)	0.58	0.18	Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.
+3 - duration_ms (int)	212546	124320	Duration of the track in ms
+4 - energy (float)	0.57	0.26	Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.
+5 - instrumentalness (float)	0.23	0.36	Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context.
+6 - key (int)	5.24	3.60	The estimated overall key of the track.
+7 - liveness (float)	0.19	0.17	Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live.
+8 - loudness	-9.94	6.50	The overall loudness of a track in decibels (dB)
+9 - mode (int)	0.61	0.49	Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived.
+10 - speechiness (float)	0.11	0.12	Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value.
+11 - tempo (int)	119.60	30.15	The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
+12 - time signature (int)	3.88	0.51	An estimated overall time signature of a track.
+13 - valence (float)	0.44	0.26	A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+
 ## Part 3. Check for Null Values
 We check for null values. Since there are no null values, we don't have to fill any missing information. 
 If there were, there we could fill with mean or median depending on the data distribution.
