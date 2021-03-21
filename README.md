@@ -106,7 +106,6 @@ Compairng Accuracy, AUC, and Actual vs Predicted values in Confusion Matrix
 ### LogisticRegression 
    - Accuracy: 0.7895316360511333
    - AUC: 0.5
-
 ![Screenshot 2021-03-21 at 1 35 20 PM](https://user-images.githubusercontent.com/70371572/111914892-4b45a300-8a4a-11eb-91c2-5ff646bd5226.png)
   - We see a weak correlation between the Actual Popular songs and Predicted Popular Songs, it indicated Logistic Regression may not be the best model for prediction in case for this data set.
 
@@ -143,6 +142,16 @@ Using a dataset of ultimate-spotify-tracks, we were able to predict popularity (
 
 
 Moving forward, I want to explore the affect of more dependencies using large hospital data to predict Medical diseases.
+
+## Future Work
+- Other factors that influence if a song will be popular or not can potentially be:
+  - artist popularity
+  - cultural context
+  - previous hits
+  - artist's genre
+  - collaborated with other popular artists
+- Merging and collaboration of data with answers to some of the above questions would allow for a more insightful and accurate prediction of popularity scores.
+
 
 ## References
 - Cher Lau-Cher Lau - https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492
