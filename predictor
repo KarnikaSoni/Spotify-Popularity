@@ -46,6 +46,12 @@ sns.jointplot(x = 'acousticness', y = 'popularity', data = dataframe)
 
 sns.jointplot(x = 'loudness', y = 'popularity', data = dataframe)
 
+fig, ax = plt.subplots(1,1, figsize=(10,6))
+_ = sns.heatmap(dataframe.corr(), square=True, cmap='YlOrRd')
+_ = plt.title('Correlation heat map', fontsize=14)
+_ = plt.xticks(fontsize=12)
+_ = plt.yticks(fontsize=12)
+
 popular_above_50 = dataframe[dataframe.popularity > 50]
 sns.distplot(popular_above_50['acousticness'])
 plt.title('Acoustiness for Songs with More than 50 Popularity')
@@ -111,6 +117,21 @@ print("Accuracy: " + str(LR_Accuracy))
 LR_AUC = roc_auc_score(y_valid, LR_Predict) 
 print("AUC: " + str(LR_AUC))
 
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(y_valid, LR_Predict)
+# Transform to df for easier plotting
+cm_df = pd.DataFrame(cm,
+                     index = ['Not Popular ','Popular'], 
+                     columns = ['Not Popular ','Popular'])
+
+plt.figure(figsize=(5.5,4))
+sns.heatmap(cm_df, annot=True)
+plt.title('Linear Regression Accuracy')
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+plt.show()
+
 # Random Forest Classifier
 
 RFC_Model = RandomForestClassifier()
@@ -121,6 +142,19 @@ print("Accuracy: " + str(RFC_Accuracy))
 
 RFC_AUC = roc_auc_score(y_valid, RFC_Predict) 
 print("AUC: " + str(RFC_AUC))
+
+cm = confusion_matrix(y_valid, RFC_Predict)
+# Transform to df for easier plotting
+cm_df = pd.DataFrame(cm,
+                     index = ['Not Popular ','Popular'], 
+                     columns = ['Not Popular ','Popular'])
+
+plt.figure(figsize=(5.5,4))
+sns.heatmap(cm_df, annot=True)
+plt.title('RFC_Model Accuracy')
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+plt.show()
 
 # K-Nearest Neighbors Classifier
 
@@ -133,6 +167,19 @@ print("Accuracy: " + str(KNN_Accuracy))
 KNN_AUC = roc_auc_score(y_valid, KNN_Predict) 
 print("AUC: " + str(KNN_AUC))
 
+cm = confusion_matrix(y_valid, KNN_Predict)
+# Transform to df for easier plotting
+cm_df = pd.DataFrame(cm,
+                     index = ['Not Popular ','Popular'], 
+                     columns = ['Not Popular ','Popular'])
+
+plt.figure(figsize=(5.5,4))
+sns.heatmap(cm_df, annot=True)
+plt.title('KNeighborsClassifier Accuracy')
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+plt.show()
+
 # Decision Tree Classifier
 
 DT_Model = DecisionTreeClassifier()
@@ -143,6 +190,19 @@ print("Accuracy: " + str(DT_Accuracy))
 
 DT_AUC = roc_auc_score(y_valid, DT_Predict) 
 print("AUC: " + str(DT_AUC))
+
+cm = confusion_matrix(y_valid, DT_Predict)
+# Transform to df for easier plotting
+cm_df = pd.DataFrame(cm,
+                     index = ['Not Popular ','Popular'], 
+                     columns = ['Not Popular ','Popular'])
+
+plt.figure(figsize=(5.5,4))
+sns.heatmap(cm_df, annot=True)
+plt.title('DecisionTreeClassifier Accuracy')
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+plt.show()
 
 # Linear Support Vector Classification
 
