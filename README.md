@@ -103,7 +103,7 @@ For feature selection, we will select the following features: acousticness, danc
 
 ## Part 7. Different Results from Models
 Compairng Accuracy, AUC, and Actual vs Predicted values in Confusion Matrix
-### LogisticRegression has 
+### LogisticRegression 
    - Accuracy: 0.7895316360511333
    - AUC: 0.5
 
@@ -126,7 +126,7 @@ Compairng Accuracy, AUC, and Actual vs Predicted values in Confusion Matrix
    - Accuracy: 0.8518637877323021
    - AUC: 0.8112920096258869
  ![Screenshot 2021-03-21 at 1 45 51 PM](https://user-images.githubusercontent.com/70371572/111915285-c22f6b80-8a4b-11eb-94cf-e4cf9c83ca14.png)
-  - We see a strong correlation between the diagonals i.e. the Actual Popular songs and Predicted Popular Songs, and also with the Actual Not- Popular and Predicted Non-Popular songs, it indicates that Random Forest may be a candidate for best model for prediction in case for this data set.
+  - We see a strong correlation between the diagonals i.e. the Actual Popular songs and Predicted Popular Songs, and also with the Actual Not- Popular and Predicted Non-Popular songs, it indicates that Decision Tree Classifier may be a candidate for best model for prediction in case for this data set. But it lacks behind Random Forest in accuracy and AUC values.
 
 ### Linear Support Vector Classification
    - Accuracy: 0.7135
