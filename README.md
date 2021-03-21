@@ -1,3 +1,4 @@
+![Screenshot 2021-03-21 at 1 33 18 PM](https://user-images.githubusercontent.com/70371572/111914817-01f55380-8a4a-11eb-9683-f25e538feefa.png)
 # Spotify-Popularity
 I am currently exploring the dependencies of parameters on the training behavior and accuracy. For this project I will predict the popularity of songs based on song metrics such as features of acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence.
 
