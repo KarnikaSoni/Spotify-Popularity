@@ -1,4 +1,3 @@
-![Screenshot 2021-03-21 at 1 33 18 PM](https://user-images.githubusercontent.com/70371572/111914817-01f55380-8a4a-11eb-9683-f25e538feefa.png)
 # Spotify-Popularity
 I am currently exploring the dependencies of parameters on the training behavior and accuracy. For this project I will predict the popularity of songs based on song metrics such as features of acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, mode, speechiness, tempo, time_signature, and valence.
 
@@ -85,6 +84,12 @@ If there were, there we could fill with mean or median depending on the data dis
 
 ### 11.Loudness for Songs with Less than 50 Popularity
 ![Screenshot 2021-03-16 at 11 05 52 PM](https://user-images.githubusercontent.com/70371572/111408784-29e06200-86ac-11eb-92ae-9344035ce6a7.png)
+
+### Heatmap for all features and Popularity
+![Screenshot 2021-03-21 at 1 33 18 PM](https://user-images.githubusercontent.com/70371572/111914817-01f55380-8a4a-11eb-9683-f25e538feefa.png)
+
+To look at any potential multicolinearity issues within the independent variables, and using sns to make a heatmap. Overall, there aren't many independent variables with high correlation values, but energy/loudness have strong correlation which could potentially cause problems, which could have pretty big implications for fitting a linear model. Another thing we notice is there is not much correlation between independent variables and popularity.![Screenshot 2021-03-21 at 1 35 20 PM](https://user-images.githubusercontent.com/70371572/111914892-4b45a300-8a4a-11eb-91c2-5ff646bd5226.png)
+
 
 ## Part 5. Converting Variables from text to binary
 There are 3 variables: key, mode, and time signature that need to be converted from text to numbers using one-hot-encoding. We also define popularity as a binary variable. 
