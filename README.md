@@ -23,23 +23,23 @@ We load the dataset to look at the statistics like mean, count, and median using
   - Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity.
 - 3 - duration_ms (int) 
   - Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.
-- 5 - instrumentalness (float)
+- 4 - instrumentalness (float)
   - Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context.
-- 6 - key (int)
+- 5 - key (int)
   - The estimated overall key of the track.
-- 7 - liveness (float)	
+- 6 - liveness (float)	
   - Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live.
-- 8 - loudness	-9.94	6.50	
+- 7 - loudness	-9.94	6.50	
   - The overall loudness of a track in decibels (dB)
-- 9 - mode (int)	
+- 8 - mode (int)	
   - Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived.
-- 10 - speechiness (float)	
+- 9 - speechiness (float)	
   - Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value.
-- 11 - tempo (int)
+- 10 - tempo (int)
   - The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
-- 12 - time signature (int)	
+- 11 - time signature (int)	
   - An estimated overall time signature of a track.
-- 13 - valence (float)	
+- 12 - valence (float)	
   - A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
 
 ## Part 3. Check for Null Values
