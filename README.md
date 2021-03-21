@@ -16,7 +16,7 @@ are the models we will compare the popularity prediction on.
 We load the dataset to look at the statistics like mean, count, and median using describe.
 ![Screenshot 2021-03-16 at 10 47 24 PM](https://user-images.githubusercontent.com/70371572/111407029-a3c31c00-86a9-11eb-8f67-ea28a951396e.png)
 
-## Descriptions of the 13 unique numerical attributes for each song:
+## Descriptions of the 12 unique numerical attributes for each song:
 - 1 - Acousticness (float) 
   - A confidence measure from 0.0 to 1.0 of whether the track is acoustic.|
 - 2 - Danceability (float)
